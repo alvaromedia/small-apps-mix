@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form App</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="left-container">
+        <div class="left-container-content">
+          <img
+            src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+            alt="odin project logo"
+          />
+          <span>Start your Adventure</span>
+        </div>
+      </div>
+
+      <div class="right-container">
+        <div class="title">
+          <h1>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            now to get started.
+          </h1>
+          <h2>You know <span>you want</span> to.</h2>
+        </div>
+
+        <h1>Let's do this</h1>
+
+        <form>
+          <label for="first-name"
+            ><p>*First name</p>
+            <input type="text" id="first-name" name="first-name" />
+            <p class="first-name alert"></p>
+          </label>
+
+          <label for="last-name"
+            ><p>*Last name</p>
+            <input type="text" id="last-name" name="last-name" />
+            <p class="last-name alert"></p>
+          </label>
+
+          <label for="password"
+            ><p>*Password</p>
+            <input type="password" id="password" name="password" />
+            <p class="password alert"></p>
+          </label>
+
+          <label for="confirm-password"
+            ><p>*Confirm password</p>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+            />
+            <p class="confirm-password alert"></p>
+          </label>
+
+          <label for="email"
+            ><p>*Email</p>
+            <input type="email" id="email" name="email" />
+            <p class="email alert"></p>
+          </label>
+
+          <label for="tel"
+            ><p>Phone number</p>
+            <input type="tel" id="tel" name="tel" />
+            <p class="tel alert"></p>
+          </label>
+        </form>
+
+        <button class="signup-button">Create an Account</button>
+
+        <div class="footer">
+          <h3>Already have an account?</h3>
+          <a href="#">Log in</a>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

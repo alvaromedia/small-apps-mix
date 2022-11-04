@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --primary-color: #34d399;
+  --secondary-color: #206276;
+  --tertiary-color: #009b9c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.app-wrapper {
+  max-width: 1100px;
+  margin: 1rem auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+.game-title {
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  font-size: 2rem;
+}
+
+.opponent {
+  /* min-height: 200px; */
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--tertiary-color);
+  /* min-width: 15rem; */
+  flex: 1 1 100px;
+}
+
+.active {
+  font-size: 5rem;
+}
+
+.opponent > p {
+  color: #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 2rem;
+}
+
+.options {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.opponent.player .option-item {
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.opponent.player .options .option-item:hover {
+  transform: scale(1.2);
+}
+
+.decision {
+  font-size: 4rem;
+}
+
+.game-result {
+  font-size: 3rem;
+}
+
+span {
+  font-size: 5rem;
+}
+
+.hidden {
+  display: none;
+}
